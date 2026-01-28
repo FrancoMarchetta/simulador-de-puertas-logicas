@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>logicgatessimulator</title>
+</head>
+
+<body>
+  <main id="app">
+    <h1>Simulador de puertas logicas</h1>
+
+    <div class="controls">
+      <label for="gate-select">Puerta Lógica:</label>
+      <select id="gate-select">
+        <option value="AND">AND</option>
+        <option value="OR">OR</option>
+        <option value="XOR">XOR</option>
+      </select>
+    </div>
+
+    <section class="simulation">
+      <div class="inputs">
+        <label><input type="checkbox" id="input1" /> Entrada A</label>
+        <label><input type="checkbox" id="input2" /> Entrada B</label>
+      </div>
+      <div class="output">
+        <span>Salida: </span><span class="bulb-off" id="output">0</span>
+      </div>
+    </section>
+
+  </main>
+  <script defer type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
