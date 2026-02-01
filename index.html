@@ -18,7 +18,11 @@
       <select id="gate-select">
         <option value="AND">AND</option>
         <option value="OR">OR</option>
+        <option value="NOT">NOT</option>
+        <option value="NAND">NAND</option>
+        <option value="NOR">NOR</option>
         <option value="XOR">XOR</option>
+        <option value="XNOR">XNOR</option>
       </select>
     </div>
 
@@ -26,6 +30,7 @@
       <div class="inputs">
         <label><input type="checkbox" id="input1" /> Entrada A</label>
         <label><input type="checkbox" id="input2" /> Entrada B</label>
+        <label id="input2-label" class="hidden"><input type="checkbox" id="input2" /> Entrada B</label>
       </div>
       <div class="output">
         <span>Salida: </span><span class="bulb-off" id="output">0</span>
@@ -33,7 +38,7 @@
     </section>
 
     <section id="Images">
-      <img id="Tabla" src="" alt="">
+      <div id="truth-table"></div>
     </section>
 
   </main>
